@@ -117,7 +117,7 @@ The model to use. The default is `gpt-3.5-turbo`. The `ModelValue` class contain
 - gpt-3.5-turbo-16k
 - gpt-4-turbo
 
-You can also set the `Model` with any other model name. For more details, see the [OpenAI API MOdel documentation](https://platform.openai.com/docs/models).
+You can also set the `Model` with any other model name. For more details, see the [OpenAI API Model documentation](https://platform.openai.com/docs/models).
 
 #### Presence Penalty
 
