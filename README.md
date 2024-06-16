@@ -1,5 +1,7 @@
 # ChatGPT library for C#
 
+![openai-chatgpt-library](https://github.com/erossini/ChatGPTLibrary/assets/9497415/a6f7722c-c111-4b4b-b105-31a5b81fd2a5)
+
 This is another C# library for [ChatGPT](https://openai.com/chatgpt) using official OpenAI API that allows developers to access ChatGPT, a chat-based large language model. 
 With this API, developers can send queries to ChatGPT and receive responses in real-time, making it easy to integrate ChatGPT into their own applications.
 
