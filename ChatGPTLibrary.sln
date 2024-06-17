@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatGPTConsole", "ChatGPTConsole\ChatGPTConsole.csproj", "{C07B5ED7-D53B-43D1-B03C-17D997CF74F8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSC.CSharp.Library.ChatGPT", "PSC.CSharp.Library.ChatGPT\PSC.CSharp.Library.ChatGPT.csproj", "{1C6A40D3-D668-42E5-8654-0E9C07F6DE03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other files", "Other files", "{46ADA167-63D3-4EF8-A4EE-A00997368E0C}"
+	ProjectSection(SolutionItems) = preProject
+		azure-pipelines.yml = azure-pipelines.yml
+		FUNDING.yml = FUNDING.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C07B5ED7-D53B-43D1-B03C-17D997CF74F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C07B5ED7-D53B-43D1-B03C-17D997CF74F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C07B5ED7-D53B-43D1-B03C-17D997CF74F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C07B5ED7-D53B-43D1-B03C-17D997CF74F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C6A40D3-D668-42E5-8654-0E9C07F6DE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C6A40D3-D668-42E5-8654-0E9C07F6DE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C6A40D3-D668-42E5-8654-0E9C07F6DE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C6A40D3-D668-42E5-8654-0E9C07F6DE03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F3F825B-E60E-4588-8099-A66876472961}
+	EndGlobalSection
+EndGlobal

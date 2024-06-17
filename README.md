@@ -5,13 +5,19 @@
 This is another C# library for [ChatGPT](https://openai.com/chatgpt) using official OpenAI API that allows developers to access ChatGPT, a chat-based large language model. 
 With this API, developers can send queries to ChatGPT and receive responses in real-time, making it easy to integrate ChatGPT into their own applications.
 
+For more details about this project, see my following posts:
+- [New ChatGPT library for C#](https://puresourcecode.com/dotnet/net8/new-chatgpt-library-for-c/)
+- [Write a ChatGPT client](https://puresourcecode.com/dotnet/csharp/write-a-chatgpt-client/)
+- [GitHub repository](https://github.com/erossini/ChatGPTLibrary)
+
+## Quick example
+
 ```csharp
 using PSC.CSharp.Library.ChatGPT;
 
-// ChatGPT Official API
-var bot = new ChatGpt("<API_KEY>");
 
-var response = await bot.Ask("What is the weather like today?");
+var chat = new ChatGpt("<API_KEY>");
+var response = await chat.Ask("What is the weather like today?");
 Console.WriteLine(response);
 ```
 
@@ -147,7 +153,7 @@ This is a simple console app that uses `PSC.CSharp.Library.ChatGPT` to interact 
 using PSC.CSharp.Library.ChatGPT;
 
 // ChatGPT Official API
-var bot = new ChatGpt("<API_KEY>");
+var chat = new ChatGpt("<API_KEY>");
 
 var prompt = string.Empty;
 
@@ -171,9 +177,9 @@ while (true)
 You can use a different model by passing the model name to the constructor.
 
 ```csharp
-var bot = new ChatGpt("<API_KEY>", new ChatGptOptions
+var chat = new ChatGpt("<API_KEY>", new ChatGptOptions
 {
-    Model = "text-davinci"
+    Model = "gpt-3.5-turbo"
 });
 ```
 
@@ -182,8 +188,34 @@ var bot = new ChatGpt("<API_KEY>", new ChatGptOptions
 you can use ChatGPT Official API by setting the base URL to a free reverse proxy server.
 
 ```csharp
-var bot = new ChatGpt("<API_KEY>", new ChatGptOptions
+var chat = new ChatGpt("<API_KEY>", new ChatGptOptions
 {
     BaseUrl = "https://api.youreverseproxy.com"
 });
 ```
+
+## Errors
+
+When a call to ChatGPT fails, there are several possible errors that can be returned. The full error will be in the `Error` property. A common example is
+
+```json
+{
+  "choices": null,
+  "created": 0,
+  "error": {
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+    "type": "insufficient_quota",
+    "param": null,
+    "code": "insufficient_quota"
+  },
+  "id": null,
+  "model": null,
+  "object": null,
+  "usage": null,
+  "success": false
+}
+```
+
+### insufficient_quota
+
+This is a very common error. That means you haven't add a payment details on your account, you haven't add money in the account or you have reached the limit of your quote.

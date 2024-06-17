@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>psc_ico.ico</ApplicationIcon>
+    <Description>C# library to manage ChatGPT</Description>
+    <Copyright>Enrico Rossini - PureSourceCode.com</Copyright>
+    <PackageIcon>psc_logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>c#, chatgpt, library,</PackageTags>
+    <RepositoryUrl>https://github.com/erossini/ChatGPTLibrary</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="psc_ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="psc_logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
