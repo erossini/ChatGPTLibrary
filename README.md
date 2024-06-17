@@ -2,6 +2,8 @@
 
 ![openai-chatgpt-library](https://github.com/erossini/ChatGPTLibrary/assets/9497415/a6f7722c-c111-4b4b-b105-31a5b81fd2a5)
 
+![NuGet badge](https://img.shields.io/nuget/v/PSC.CSharp.Library.ChatGPT)
+
 This is another C# library for [ChatGPT](https://openai.com/chatgpt) using official OpenAI API that allows developers to access ChatGPT, a chat-based large language model. 
 With this API, developers can send queries to ChatGPT and receive responses in real-time, making it easy to integrate ChatGPT into their own applications.
 
@@ -65,24 +67,23 @@ Here is a sample code showing how to use `PSC.CSharp.Library.ChatGPT`:
 ```csharp
 using PSC.CSharp.Library.ChatGPT;
 
-// ChatGPT Official API
-var bot = new ChatGpt("<API_KEY>");
+var chat = new ChatGpt("<API_KEY>");
 
 // get response
-var response = await bot.Ask("What is the weather like today?");
+var response = await chat.Ask("What is the weather like today?");
 Console.WriteLine(response);
 
 // stream response
-await bot.AskStream(response => {
+await chat.AskStream(response => {
     Console.WriteLine(response);
 }, "What is the weather like today?");
 
-// get response for a specific conversation
-var response = await bot.Ask("What is the weather like today?", "conversation name");
+// get a response for a specific conversation
+var response = await chat.Ask("What is the weather like today?", "conversation name");
 Console.WriteLine(response);
 
 // stream response for a specific conversation
-await bot.AskStream(response => {
+await chat.AskStream(response => {
     Console.WriteLine(response);
 }, "What is the weather like today?", "conversation name");
 ```
