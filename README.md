@@ -220,3 +220,11 @@ When a call to ChatGPT fails, there are several possible errors that can be retu
 ### insufficient_quota
 
 This is a very common error. That means you haven't add a payment details on your account, you haven't add money in the account or you have reached the limit of your quote.
+
+## More articles
+
+For more details about this project, see my following posts:
+- [New ChatGPT library for C#](https://puresourcecode.com/dotnet/net8/new-chatgpt-library-for-c/)
+- [Write a ChatGPT client](https://puresourcecode.com/dotnet/csharp/write-a-chatgpt-client/)
+- [GitHub repository](https://github.com/erossini/ChatGPTLibrary)
+- [Using ChatGPT library for grammar checker API](https://puresourcecode.com/dotnet/net8/using-chatgpt-library-for-grammar-checker-api)
